@@ -3,7 +3,844 @@
   "version": "2.0",
   "name": "lab3",
   "url": "https://www.fl.ru",
-  "tests": [{
+  "tests": [ {
+    "id": "720b08eb-59ab-4b09-88a2-539843b520d3",
+    "name": "register_client",
+    "commands": [{
+      "id": "8231e465-61a9-4393-9e8b-889f5956bdf9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Регистрация",
+      "targets": [
+        ["linkText=Регистрация", "linkText"],
+        ["css=.pl-16", "css:finder"],
+        ["xpath=//a[contains(text(),'Регистрация')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/account/registration-choice/')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Регистрация')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "097c6e2e-c35e-483b-942a-d1fb83037e1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-24 > .btn",
+      "targets": [
+        ["css=.mt-24 > .btn", "css:finder"],
+        ["xpath=//button[@onclick=\"location.href = 'http://www.fl.ru/account/registration/?providerType=2'\"]", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Продолжить как заказчик')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d30b09ef-3a05-4c9e-97ce-49726cfc0854",
+      "comment": "",
+      "command": "click",
+      "target": "id=ui-input-user-email",
+      "targets": [
+        ["id=ui-input-user-email", "id"],
+        ["css=#ui-input-user-email", "css:finder"],
+        ["xpath=//input[@id='ui-input-user-email']", "xpath:attributes"],
+        ["xpath=//div[@id='qa-registration-page']/div[2]/div/div/div/div[2]/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "130abbe6-c49a-450e-99e7-fa02ea0ca5dc",
+      "comment": "",
+      "command": "type",
+      "target": "id=ui-input-user-email",
+      "targets": [
+        ["id=ui-input-user-email", "id"],
+        ["css=#ui-input-user-email", "css:finder"],
+        ["xpath=//input[@id='ui-input-user-email']", "xpath:attributes"],
+        ["xpath=//div[@id='qa-registration-page']/div[2]/div/div/div/div[2]/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "petyaphoto1990@gmail.com"
+    }, {
+      "id": "6cad05d8-0ebb-4af3-8d28-8720ff44b011",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-password",
+      "targets": [
+        ["id=user-password", "id"],
+        ["css=#user-password", "css:finder"],
+        ["xpath=//input[@id='user-password']", "xpath:attributes"],
+        ["xpath=//div[@id='qa-registration-page']/div[2]/div/div/div/div[2]/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e8a8cce-5b4d-4e29-ab06-8785217c44fb",
+      "comment": "",
+      "command": "type",
+      "target": "id=user-password",
+      "targets": [
+        ["id=user-password", "id"],
+        ["css=#user-password", "css:finder"],
+        ["xpath=//input[@id='user-password']", "xpath:attributes"],
+        ["xpath=//div[@id='qa-registration-page']/div[2]/div/div/div/div[2]/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "Parolclass2023!"
+    }, {
+      "id": "13e056bb-e842-499c-9d4d-5dc14b75cb96",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0c75405-7525-4ee7-a293-cce6a31c8624",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3a2a84c-9522-4b54-82fa-4dcdc6aab796",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e15e5bc-e029-40ab-bbd9-a54a429d2e9b",
+      "comment": "",
+      "command": "click",
+      "target": "id=qa-registration-button",
+      "targets": [
+        ["id=qa-registration-button", "id"],
+        ["css=#qa-registration-button", "css:finder"],
+        ["xpath=//div[@id='qa-registration-button']", "xpath:attributes"],
+        ["xpath=//div[@id='qa-registration-page']/div[2]/div/div/div/div[2]/div[5]/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "925f6bf7-10b0-4963-95e4-e7480074f55e",
+    "name": "register_worker",
+    "commands": [{
+      "id": "7d82c3d7-a686-4d2e-b817-cd028533edd9",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.fl.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2d381df-ced9-41e9-8f77-5258830c440e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x797",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55697bce-b1b9-4f7d-bb03-929729303d41",
+      "comment": "",
+      "command": "click",
+      "target": "css=#navbarRightDropdown use",
+      "targets": [
+        ["css=#navbarRightDropdown use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "506cb7a5-b4f1-4507-acf9-c44a97217774",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=navbarRightDropdown",
+      "targets": [
+        ["id=navbarRightDropdown", "id"],
+        ["css=#navbarRightDropdown", "css:finder"],
+        ["xpath=//a[@id='navbarRightDropdown']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a70b98cc-41d2-43c7-a857-46a88688b2e4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=navbarRightDropdown",
+      "targets": [
+        ["id=navbarRightDropdown", "id"],
+        ["css=#navbarRightDropdown", "css:finder"],
+        ["xpath=//a[@id='navbarRightDropdown']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e58c849-ffb3-4d0d-b481-6a6ef6ca7fb6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-flex:nth-child(1) > span",
+      "targets": [
+        ["css=.d-flex:nth-child(1) > span", "css:finder"],
+        ["xpath=//a[12]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Выйти из аккаунта')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "79925c13-db15-49cc-b733-56c08bc18457",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Регистрация",
+      "targets": [
+        ["linkText=Регистрация", "linkText"],
+        ["css=.pl-16", "css:finder"],
+        ["xpath=//a[contains(text(),'Регистрация')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/account/registration-choice/')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Регистрация')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43089060-07b0-46e7-87bd-6a5dd251f4ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mr-sm-36 > .btn",
+      "targets": [
+        ["css=.mr-sm-36 > .btn", "css:finder"],
+        ["xpath=//button[@onclick=\"location.href = 'http://www.fl.ru/account/registration/?providerType=1'\"]", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Продолжить как фрилансер')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c1c55bf-727c-4d08-b5bc-fef30889d325",
+      "comment": "",
+      "command": "click",
+      "target": "id=ui-input-user-email",
+      "targets": [
+        ["id=ui-input-user-email", "id"],
+        ["css=#ui-input-user-email", "css:finder"],
+        ["xpath=//input[@id='ui-input-user-email']", "xpath:attributes"],
+        ["xpath=//div[@id='qa-registration-page']/div[2]/div/div/div/div[2]/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d485b6f-0753-449d-991a-6a7a67b35b0d",
+      "comment": "",
+      "command": "type",
+      "target": "id=ui-input-user-email",
+      "targets": [
+        ["id=ui-input-user-email", "id"],
+        ["css=#ui-input-user-email", "css:finder"],
+        ["xpath=//input[@id='ui-input-user-email']", "xpath:attributes"],
+        ["xpath=//div[@id='qa-registration-page']/div[2]/div/div/div/div[2]/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "workerbest1980@gmail.com"
+    }, {
+      "id": "bf4edce8-3f5c-4e8c-99aa-ab3bdf12dc5a",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-password",
+      "targets": [
+        ["id=user-password", "id"],
+        ["css=#user-password", "css:finder"],
+        ["xpath=//input[@id='user-password']", "xpath:attributes"],
+        ["xpath=//div[@id='qa-registration-page']/div[2]/div/div/div/div[2]/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f36cece4-9ba0-4119-8538-57bc97b5aa72",
+      "comment": "",
+      "command": "type",
+      "target": "id=user-password",
+      "targets": [
+        ["id=user-password", "id"],
+        ["css=#user-password", "css:finder"],
+        ["xpath=//input[@id='user-password']", "xpath:attributes"],
+        ["xpath=//div[@id='qa-registration-page']/div[2]/div/div/div/div[2]/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "Superparol1980!"
+    }, {
+      "id": "aae70775-f63d-4cba-af86-df3f4fa025d5",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "9996a54d-d486-4a21-a591-baa5b0438a39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31aac96f-0cb2-4185-be4a-46da4c17351c",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "082c73d7-3dd4-4fce-921d-90f713dd89a3",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=3",
+      "targets": [
+        ["index=3"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc81fa5f-bd69-4259-a53d-e2ca5030a0f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) > .rc-imageselect-tile:nth-child(2) .rc-image-tile-44",
+      "targets": [
+        ["css=tr:nth-child(3) > .rc-imageselect-tile:nth-child(2) .rc-image-tile-44", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw_HrWjExXXtSQHAIP_3VEir0et9ye77wKIWpt78BjdYYgvLqOYGc5Idng5K861wKILrQ9yssPYLigM5nhedKxdSAMEK9DxePSfR4C-sTYD0DW1aONd1B0rKjGB_bcUAZDuMdrFwTguFVfTVx_18hUYTaG7VUTVDW1RjveZ6ASHtlL8--5uEOk2Q-JSqcLyyjSTcN8rR&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE')])[10]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr[3]/td[2]/div/div/img", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cc4f183-7dd1-4384-a2c9-1f80a3789e29",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-44",
+      "targets": [
+        ["css=tr:nth-child(3) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-44", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw_HrWjExXXtSQHAIP_3VEir0et9ye77wKIWpt78BjdYYgvLqOYGc5Idng5K861wKILrQ9yssPYLigM5nhedKxdSAMEK9DxePSfR4C-sTYD0DW1aONd1B0rKjGB_bcUAZDuMdrFwTguFVfTVx_18hUYTaG7VUTVDW1RjveZ6ASHtlL8--5uEOk2Q-JSqcLyyjSTcN8rR&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE')])[11]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr[3]/td[3]/div/div/img", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ae25e97-bb87-48b5-a828-5206a588980e",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-44",
+      "targets": [
+        ["css=tr:nth-child(2) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-44", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw_HrWjExXXtSQHAIP_3VEir0et9ye77wKIWpt78BjdYYgvLqOYGc5Idng5K861wKILrQ9yssPYLigM5nhedKxdSAMEK9DxePSfR4C-sTYD0DW1aONd1B0rKjGB_bcUAZDuMdrFwTguFVfTVx_18hUYTaG7VUTVDW1RjveZ6ASHtlL8--5uEOk2Q-JSqcLyyjSTcN8rR&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE')])[7]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr[2]/td[3]/div/div/img", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "334b1324-a2e1-4ed8-a95a-f467f38dec8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > .rc-imageselect-tile:nth-child(4) .rc-image-tile-44",
+      "targets": [
+        ["css=tr:nth-child(2) > .rc-imageselect-tile:nth-child(4) .rc-image-tile-44", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw_HrWjExXXtSQHAIP_3VEir0et9ye77wKIWpt78BjdYYgvLqOYGc5Idng5K861wKILrQ9yssPYLigM5nhedKxdSAMEK9DxePSfR4C-sTYD0DW1aONd1B0rKjGB_bcUAZDuMdrFwTguFVfTVx_18hUYTaG7VUTVDW1RjveZ6ASHtlL8--5uEOk2Q-JSqcLyyjSTcN8rR&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE')])[8]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr[2]/td[4]/div/div/img", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[4]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91949c71-1ee2-4ad3-aafe-1cb47ef7377a",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) > .rc-imageselect-tile:nth-child(4) .rc-image-tile-44",
+      "targets": [
+        ["css=tr:nth-child(3) > .rc-imageselect-tile:nth-child(4) .rc-image-tile-44", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw_HrWjExXXtSQHAIP_3VEir0et9ye77wKIWpt78BjdYYgvLqOYGc5Idng5K861wKILrQ9yssPYLigM5nhedKxdSAMEK9DxePSfR4C-sTYD0DW1aONd1B0rKjGB_bcUAZDuMdrFwTguFVfTVx_18hUYTaG7VUTVDW1RjveZ6ASHtlL8--5uEOk2Q-JSqcLyyjSTcN8rR&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE')])[12]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr[3]/td[4]/div/div/img", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[4]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87409607-1fc6-4458-82f9-459c2cf90ff2",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > .rc-imageselect-tile:nth-child(2) .rc-image-tile-44",
+      "targets": [
+        ["css=tr:nth-child(2) > .rc-imageselect-tile:nth-child(2) .rc-image-tile-44", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw_HrWjExXXtSQHAIP_3VEir0et9ye77wKIWpt78BjdYYgvLqOYGc5Idng5K861wKILrQ9yssPYLigM5nhedKxdSAMEK9DxePSfR4C-sTYD0DW1aONd1B0rKjGB_bcUAZDuMdrFwTguFVfTVx_18hUYTaG7VUTVDW1RjveZ6ASHtlL8--5uEOk2Q-JSqcLyyjSTcN8rR&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE')])[6]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr[2]/td[2]/div/div/img", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67dbc263-7e2e-46f1-8037-f67437fba05d",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) > .rc-imageselect-tile:nth-child(2) .rc-image-tile-44",
+      "targets": [
+        ["css=tr:nth-child(1) > .rc-imageselect-tile:nth-child(2) .rc-image-tile-44", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw_HrWjExXXtSQHAIP_3VEir0et9ye77wKIWpt78BjdYYgvLqOYGc5Idng5K861wKILrQ9yssPYLigM5nhedKxdSAMEK9DxePSfR4C-sTYD0DW1aONd1B0rKjGB_bcUAZDuMdrFwTguFVfTVx_18hUYTaG7VUTVDW1RjveZ6ASHtlL8--5uEOk2Q-JSqcLyyjSTcN8rR&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE')])[2]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr/td[2]/div/div/img", "xpath:idRelative"],
+        ["xpath=//td[2]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7709066-d6be-4e83-9a6d-920435a9dbd8",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-44",
+      "targets": [
+        ["css=tr:nth-child(1) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-44", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw_HrWjExXXtSQHAIP_3VEir0et9ye77wKIWpt78BjdYYgvLqOYGc5Idng5K861wKILrQ9yssPYLigM5nhedKxdSAMEK9DxePSfR4C-sTYD0DW1aONd1B0rKjGB_bcUAZDuMdrFwTguFVfTVx_18hUYTaG7VUTVDW1RjveZ6ASHtlL8--5uEOk2Q-JSqcLyyjSTcN8rR&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE')])[3]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr/td[3]/div/div/img", "xpath:idRelative"],
+        ["xpath=//td[3]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c95b5ac1-4813-44e9-9c99-1842734ebd7f",
+      "comment": "",
+      "command": "click",
+      "target": "id=recaptcha-verify-button",
+      "targets": [
+        ["id=recaptcha-verify-button", "id"],
+        ["css=#recaptcha-verify-button", "css:finder"],
+        ["xpath=//button[@id='recaptcha-verify-button']", "xpath:attributes"],
+        ["xpath=//div[@id='rc-imageselect']/div[3]/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "518b0f83-87d4-4719-b8f3-c0734da5fac0",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .rc-imageselect-tile:nth-child(4) .rc-image-tile-44",
+      "targets": [
+        ["css=tr:nth-child(4) > .rc-imageselect-tile:nth-child(4) .rc-image-tile-44", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw_HrWjExXXtSQHAIP_3VEir0et9ye77wKIWpt78BjdYYgvLqOYGc5Idng5K861wKILrQ9yssPYLigM5nhedKxdSAMEK9DxePSfR4C-sTYD0DW1aONd1B0rKjGB_bcUAZDuMdrFwTguFVfTVx_18hUYTaG7VUTVDW1RjveZ6ASHtlL8--5uEOk2Q-JSqcLyyjSTcN8rR&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE&id=2')])[16]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr[4]/td[4]/div/div/img", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[4]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3edb47ae-a3e0-427c-bc86-9026439eddbd",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-44",
+      "targets": [
+        ["css=tr:nth-child(4) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-44", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw_HrWjExXXtSQHAIP_3VEir0et9ye77wKIWpt78BjdYYgvLqOYGc5Idng5K861wKILrQ9yssPYLigM5nhedKxdSAMEK9DxePSfR4C-sTYD0DW1aONd1B0rKjGB_bcUAZDuMdrFwTguFVfTVx_18hUYTaG7VUTVDW1RjveZ6ASHtlL8--5uEOk2Q-JSqcLyyjSTcN8rR&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE&id=2')])[15]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr[4]/td[3]/div/div/img", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "865777e8-3896-4961-b70f-82354efa41b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-44",
+      "targets": [
+        ["css=tr:nth-child(3) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-44", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw_HrWjExXXtSQHAIP_3VEir0et9ye77wKIWpt78BjdYYgvLqOYGc5Idng5K861wKILrQ9yssPYLigM5nhedKxdSAMEK9DxePSfR4C-sTYD0DW1aONd1B0rKjGB_bcUAZDuMdrFwTguFVfTVx_18hUYTaG7VUTVDW1RjveZ6ASHtlL8--5uEOk2Q-JSqcLyyjSTcN8rR&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE&id=2')])[11]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr[3]/td[3]/div/div/img", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb9c4a05-06b0-498f-a162-8374e6042abb",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-44",
+      "targets": [
+        ["css=tr:nth-child(2) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-44", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw_HrWjExXXtSQHAIP_3VEir0et9ye77wKIWpt78BjdYYgvLqOYGc5Idng5K861wKILrQ9yssPYLigM5nhedKxdSAMEK9DxePSfR4C-sTYD0DW1aONd1B0rKjGB_bcUAZDuMdrFwTguFVfTVx_18hUYTaG7VUTVDW1RjveZ6ASHtlL8--5uEOk2Q-JSqcLyyjSTcN8rR&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE&id=2')])[7]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr[2]/td[3]/div/div/img", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad7de055-6e7b-4695-8ede-33ac0dc11462",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > .rc-imageselect-tile:nth-child(2) .rc-image-tile-44",
+      "targets": [
+        ["css=tr:nth-child(2) > .rc-imageselect-tile:nth-child(2) .rc-image-tile-44", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw_HrWjExXXtSQHAIP_3VEir0et9ye77wKIWpt78BjdYYgvLqOYGc5Idng5K861wKILrQ9yssPYLigM5nhedKxdSAMEK9DxePSfR4C-sTYD0DW1aONd1B0rKjGB_bcUAZDuMdrFwTguFVfTVx_18hUYTaG7VUTVDW1RjveZ6ASHtlL8--5uEOk2Q-JSqcLyyjSTcN8rR&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE&id=2')])[6]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr[2]/td[2]/div/div/img", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "994d519f-5164-48aa-93be-237346571eff",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) > .rc-imageselect-tile:nth-child(2) .rc-image-tile-44",
+      "targets": [
+        ["css=tr:nth-child(1) > .rc-imageselect-tile:nth-child(2) .rc-image-tile-44", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw_HrWjExXXtSQHAIP_3VEir0et9ye77wKIWpt78BjdYYgvLqOYGc5Idng5K861wKILrQ9yssPYLigM5nhedKxdSAMEK9DxePSfR4C-sTYD0DW1aONd1B0rKjGB_bcUAZDuMdrFwTguFVfTVx_18hUYTaG7VUTVDW1RjveZ6ASHtlL8--5uEOk2Q-JSqcLyyjSTcN8rR&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE&id=2')])[2]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr/td[2]/div/div/img", "xpath:idRelative"],
+        ["xpath=//td[2]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40ad8f44-5af5-44de-9031-6722dc6435e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-44",
+      "targets": [
+        ["css=tr:nth-child(1) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-44", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw_HrWjExXXtSQHAIP_3VEir0et9ye77wKIWpt78BjdYYgvLqOYGc5Idng5K861wKILrQ9yssPYLigM5nhedKxdSAMEK9DxePSfR4C-sTYD0DW1aONd1B0rKjGB_bcUAZDuMdrFwTguFVfTVx_18hUYTaG7VUTVDW1RjveZ6ASHtlL8--5uEOk2Q-JSqcLyyjSTcN8rR&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE&id=2')])[3]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr/td[3]/div/div/img", "xpath:idRelative"],
+        ["xpath=//td[3]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e808435d-2dfa-437f-9d99-023ece2959a0",
+      "comment": "",
+      "command": "click",
+      "target": "id=recaptcha-verify-button",
+      "targets": [
+        ["id=recaptcha-verify-button", "id"],
+        ["css=#recaptcha-verify-button", "css:finder"],
+        ["xpath=//button[@id='recaptcha-verify-button']", "xpath:attributes"],
+        ["xpath=//div[@id='rc-imageselect']/div[3]/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "382bb71f-63a4-4121-830f-59070032bc1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > .rc-imageselect-tile:nth-child(1) .rc-image-tile-33",
+      "targets": [
+        ["css=tr:nth-child(2) > .rc-imageselect-tile:nth-child(1) .rc-image-tile-33", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw81cPJ1MK8l6QFuiObA0EMFwxDqZ5Pjg0y9M7U1aJrpuUoVCn5Qal5Z7CbIRAoKWgv2TdqlKFr09GhzFbVc_rbvinkHD5Mf-0pg3xLuQlSjSEP9XdLh8Upru04RZ79AllppGZbJtx87cN7zo7dePC9BpA332dEQWU7LB_NbpGR9OSN2K7wpyhnSh14JFGgaOzB04mF6&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE')])[4]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr[2]/td/div/div/img", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27dd091d-65e8-4f1b-a5fe-6fdcd13f683e",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) > .rc-imageselect-tile:nth-child(2) .rc-image-tile-33",
+      "targets": [
+        ["css=tr:nth-child(3) > .rc-imageselect-tile:nth-child(2) .rc-image-tile-33", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw81cPJ1MK8l6QFuiObA0EMFwxDqZ5Pjg0y9M7U1aJrpuUoVCn5Qal5Z7CbIRAoKWgv2TdqlKFr09GhzFbVc_rbvinkHD5Mf-0pg3xLuQlSjSEP9XdLh8Upru04RZ79AllppGZbJtx87cN7zo7dePC9BpA332dEQWU7LB_NbpGR9OSN2K7wpyhnSh14JFGgaOzB04mF6&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE')])[8]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr[3]/td[2]/div/div/img", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7df6510-3481-4ac7-9ed7-4bd2cba30605",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-33",
+      "targets": [
+        ["css=tr:nth-child(1) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-33", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.google.com/recaptcha/api2/payload?p=06AL8dmw81cPJ1MK8l6QFuiObA0EMFwxDqZ5Pjg0y9M7U1aJrpuUoVCn5Qal5Z7CbIRAoKWgv2TdqlKFr09GhzFbVc_rbvinkHD5Mf-0pg3xLuQlSjSEP9XdLh8Upru04RZ79AllppGZbJtx87cN7zo7dePC9BpA332dEQWU7LB_NbpGR9OSN2K7wpyhnSh14JFGgaOzB04mF6&k=6LfyrzIaAAAAADxcAWE0Li7ViNp5HdOz8d129ydE')])[3]", "xpath:img"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr/td[3]/div/div/img", "xpath:idRelative"],
+        ["xpath=//td[3]/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c760bf3-a781-435c-ab2f-b945c3a5147a",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-overlay",
+      "targets": [
+        ["css=tr:nth-child(1) > .rc-imageselect-tile:nth-child(3) .rc-image-tile-overlay", "css:finder"],
+        ["xpath=//div[@id='rc-imageselect-target']/table/tbody/tr/td[3]/div/div/div", "xpath:idRelative"],
+        ["xpath=//td[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e0de62b-ded5-4179-aaf3-ba77ae2388f7",
+      "comment": "",
+      "command": "click",
+      "target": "id=recaptcha-verify-button",
+      "targets": [
+        ["id=recaptcha-verify-button", "id"],
+        ["css=#recaptcha-verify-button", "css:finder"],
+        ["xpath=//button[@id='recaptcha-verify-button']", "xpath:attributes"],
+        ["xpath=//div[@id='rc-imageselect']/div[3]/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3da862b-b174-41bd-9b02-d85ab8540892",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "59481299-120d-4e37-8138-6c1dc2d1c56f",
+      "comment": "",
+      "command": "click",
+      "target": "id=qa-registration-button",
+      "targets": [
+        ["id=qa-registration-button", "id"],
+        ["css=#qa-registration-button", "css:finder"],
+        ["xpath=//div[@id='qa-registration-button']", "xpath:attributes"],
+        ["xpath=//div[@id='qa-registration-page']/div[2]/div/div/div/div[2]/div[5]/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98a5c38f-8387-4c05-ae4a-94a785a3416f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Политикой конфиденциальности",
+      "targets": [
+        ["linkText=Политикой конфиденциальности", "linkText"],
+        ["css=.text-gray-dark:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Политикой конфиденциальности')]", "xpath:link"],
+        ["xpath=//div[@id='qa-registration-page']/div[2]/div/div/div/div[2]/p/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://st.fl.ru/about/documents/privacy_policy.pdf')]", "xpath:href"],
+        ["xpath=//p/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Политикой конфиденциальности')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "072c5612-00b5-44e2-b9d0-eff52d568066",
+      "comment": "",
+      "command": "click",
+      "target": "css=.d-md-block:nth-child(1)",
+      "targets": [
+        ["css=.d-md-block:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='1.Вашуровень2']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af7e4b62-bd00-49d4-a835-c65118173db4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wizard-btn",
+      "targets": [
+        ["css=.wizard-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='app-vue']/div/div[2]/div/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Продолжить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "827c4bd2-c4ea-403f-8d62-cc07dfcb6aae",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//div[@id='2.Осебе,город,фото4']/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1189247a-4056-4ace-954f-8f08c51c7122",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//div[@id='2.Осебе,город,фото4']/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "владимир"
+    }, {
+      "id": "3d745a9b-5c2b-46d4-98f1-907248d340f4",
+      "comment": "",
+      "command": "click",
+      "target": "id=surname",
+      "targets": [
+        ["id=surname", "id"],
+        ["css=#surname", "css:finder"],
+        ["xpath=//input[@id='surname']", "xpath:attributes"],
+        ["xpath=//div[@id='2.Осебе,город,фото4']/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "deb9d926-53d3-420a-a806-fc4107f4f2e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=surname",
+      "targets": [
+        ["id=surname", "id"],
+        ["css=#surname", "css:finder"],
+        ["xpath=//input[@id='surname']", "xpath:attributes"],
+        ["xpath=//div[@id='2.Осебе,город,фото4']/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Горный"
+    }, {
+      "id": "3b5ebf75-0588-4a01-ae59-928b05c04c8e",
+      "comment": "",
+      "command": "click",
+      "target": "id=aboutMe",
+      "targets": [
+        ["id=aboutMe", "id"],
+        ["css=#aboutMe", "css:finder"],
+        ["xpath=//textarea[@id='aboutMe']", "xpath:attributes"],
+        ["xpath=//div[@id='2.Осебе,город,фото4']/div/div/div/div[3]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20e97c42-941e-419c-a65f-506b1e6da097",
+      "comment": "",
+      "command": "type",
+      "target": "id=aboutMe",
+      "targets": [
+        ["id=aboutMe", "id"],
+        ["css=#aboutMe", "css:finder"],
+        ["xpath=//textarea[@id='aboutMe']", "xpath:attributes"],
+        ["xpath=//div[@id='2.Осебе,город,фото4']/div/div/div/div[3]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Фотограф с трехлетним стажем, обработка, ретушь фото."
+    }, {
+      "id": "9fe95e6f-e926-49a9-9f08-2a9e7eeae726",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,213)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7f0fe1c-f100-47c4-a3fc-b118e3b73b97",
+      "comment": "",
+      "command": "click",
+      "target": "css=#vs1__combobox .vs__search",
+      "targets": [
+        ["css=#vs1__combobox .vs__search", "css:finder"],
+        ["xpath=//input[@type='search']", "xpath:attributes"],
+        ["xpath=//div[@id='vs1__combobox']/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "075195e9-d41c-491a-bb10-d4321730228b",
+      "comment": "",
+      "command": "click",
+      "target": "id=vs1__option-1",
+      "targets": [
+        ["id=vs1__option-1", "id"],
+        ["css=#vs1__option-1", "css:finder"],
+        ["xpath=//li[@id='vs1__option-1']", "xpath:attributes"],
+        ["xpath=//ul[@id='vs1__listbox']/li[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Россия')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0ec06f4-64b8-484d-a20c-a8b23927a11b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#vs2__combobox .vs__search",
+      "targets": [
+        ["css=#vs2__combobox .vs__search", "css:finder"],
+        ["xpath=(//input[@type='search'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='vs2__combobox']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "586ed543-2f25-47cd-8515-a53d26e273d4",
+      "comment": "",
+      "command": "click",
+      "target": "id=vs2__option-0",
+      "targets": [
+        ["id=vs2__option-0", "id"],
+        ["css=#vs2__option-0", "css:finder"],
+        ["xpath=//li[@id='vs2__option-0']", "xpath:attributes"],
+        ["xpath=//ul[@id='vs2__listbox']/li", "xpath:idRelative"],
+        ["xpath=//div[2]/div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Санкт-Петербург')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3d30aa7-c9c4-418a-9a13-98889f00ca31",
+      "comment": "",
+      "command": "type",
+      "target": "css=#vs2__combobox .vs__search",
+      "targets": [
+        ["css=#vs2__combobox .vs__search", "css:finder"],
+        ["xpath=(//input[@type='search'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='vs2__combobox']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Санк"
+    }, {
+      "id": "acc2b424-cd7c-4c37-a812-68e4b8e5def0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wizard-btn",
+      "targets": [
+        ["css=.wizard-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='app-vue']/div/div[2]/div/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Продолжить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f24e17d4-45ac-4836-b772-0e533c4d483a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,323)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "455b44b2-27b7-4263-be6b-510b7ffdca4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group__wrapper:nth-child(2) .text-6:nth-child(1) .list-group__text",
+      "targets": [
+        ["css=.list-group__wrapper:nth-child(2) .text-6:nth-child(1) .list-group__text", "css:finder"],
+        ["xpath=//div[@id='example-input-group-3']/div[2]/div[2]/div/div/label/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Фотография')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bec3845-e82f-45dd-87de-3ebb88d06d3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-unstyled:nth-child(6) .ui-radio-label",
+      "targets": [
+        ["css=.list-unstyled:nth-child(6) .ui-radio-label", "css:finder"],
+        ["xpath=//div[@id='example-input-group-3']/div[2]/div[2]/div/div/div/ul/li[6]/div/label", "xpath:idRelative"],
+        ["xpath=//li[6]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Ретуширование/Коллажи')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da0caf71-3616-41df-88fd-b5a6d8d8801c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wizard-btn",
+      "targets": [
+        ["css=.wizard-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='app-vue']/div/div[2]/div/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Зарегистрироваться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
    "id": "51ba7571-18a2-4828-ae7c-75e0e4443055",
     "name": "profile",
     "commands": [{
