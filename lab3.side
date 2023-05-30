@@ -4,6 +4,331 @@
   "name": "lab3",
   "url": "https://www.fl.ru",
   "tests": [{
+   "id": "51ba7571-18a2-4828-ae7c-75e0e4443055",
+    "name": "profile",
+    "commands": [{
+      "id": "bea42bb6-66c1-4ab3-894a-4e6f3dcf51c0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5aed4050-a5a1-431f-98cc-f45557a24920",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6241f7f-bda5-487e-a11a-4e6b9415c92e",
+      "comment": "",
+      "command": "click",
+      "target": "//html/body/nav/div/div[2]/ul/li[4]/div/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95aea071-67ac-4933-86a1-7834df29b967",
+      "comment": "",
+      "command": "click",
+      "target": "//html/body/nav/div/div[2]/ul/li[4]/div/div/a[1]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "77dd30a9-e7e5-49ee-a674-461075635041",
+    "name": "лента",
+    "commands": [{
+      "id": "09bae7d6-8fdb-4602-9750-4eb7730da8e5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c962d36e-0555-4b66-8a7c-8debaa31af48",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f975986-d54b-4cb2-bc9c-413af66c530f",
+      "comment": "",
+      "command": "click",
+      "target": "//html/body/nav/div/div[2]/ul/li[4]/div/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1fa6dad-c51f-47ac-9d86-144b88c6a0f0",
+      "comment": "",
+      "command": "click",
+      "target": "//html/body/nav/div/div[2]/ul/li[4]/div/div/a[9]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "dc13804b-6658-4a10-b9b5-1742a7f5c503",
+    "name": "Счет",
+    "commands": [{
+      "id": "bf65554f-857b-4a2d-9853-b41f89a47d3c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53895c85-83f0-4e9d-809f-1644c7ab9a15",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33acfb36-9bc7-4f9b-8092-d6f7ad0a6f73",
+      "comment": "",
+      "command": "click",
+      "target": "//html/body/nav/div/div[2]/ul/li[4]/div/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "efc17c31-91d9-488f-a3a2-2555289ceda4",
+      "comment": "",
+      "command": "click",
+      "target": "//html/body/nav/div/div[2]/ul/li[4]/div/div/a[8]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b0aeacd7-d1f6-44e9-bce3-eb2fac5773df",
+    "name": "Переобуться",
+    "commands": [{
+      "id": "ff04bbf8-1142-43d6-8f01-8a53bab35559",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "324920f1-820f-4eb5-b129-fb76b6e80338",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "275743d7-704a-4a4a-8539-f42578747685",
+      "comment": "",
+      "command": "click",
+      "target": "//html/body/nav/div/div[2]/ul/li[4]/div/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95e65854-0369-467d-9dab-dc0e20d0b788",
+      "comment": "",
+      "command": "click",
+      "target": "//html/body/nav/div/div[2]/ul/li[4]/div/div/a[11]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4c3b3690-fd9a-474b-8825-0fd0441eb226",
+    "name": "Разместить заказ",
+    "commands": [{
+      "id": "5c5dbbf6-af54-4a98-b782-60f1f4565c0c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "622d92b6-d5f2-4c7e-b9b3-24307f9ede65",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c52fcbbd-1ae6-4275-897d-268a050b595f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_green",
+      "targets": [
+        ["css=.\\_green", "css:finder"],
+        ["xpath=//div[@id='app-vue']/div/div/div/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/task/?ec=project_create_index_auth')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdc64888-c58c-414a-aa69-30fc1b85d115",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Опубликовать заказ",
+      "targets": [
+        ["linkText=Опубликовать заказ", "linkText"],
+        ["css=.fl-card__wrapper:nth-child(1) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Опубликовать заказ')]", "xpath:link"],
+        ["xpath=//div[@id='manage-care-block']/div/div[2]/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/projects/create/?ec=project_create_index_auth')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Опубликовать заказ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7c9591b-51f6-45fa-b181-8376f243168d",
+      "comment": "",
+      "command": "click",
+      "target": "id=ui-input-project-title-input",
+      "targets": [
+        ["id=ui-input-project-title-input", "id"],
+        ["css=#ui-input-project-title-input", "css:finder"],
+        ["xpath=//input[@id='ui-input-project-title-input']", "xpath:attributes"],
+        ["xpath=//div[@id='qa-project-wizard-step-1']/div[2]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e44aff7f-8908-4992-b04c-4fd04786cca2",
+      "comment": "",
+      "command": "type",
+      "target": "id=ui-input-project-title-input",
+      "targets": [
+        ["id=ui-input-project-title-input", "id"],
+        ["css=#ui-input-project-title-input", "css:finder"],
+        ["xpath=//input[@id='ui-input-project-title-input']", "xpath:attributes"],
+        ["xpath=//div[@id='qa-project-wizard-step-1']/div[2]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "заказ"
+    }, {
+      "id": "3a8f006a-e68f-4403-9835-f91dd8424149",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-textarea",
+      "targets": [
+        ["css=.ui-textarea", "css:finder"],
+        ["xpath=//div[@id='qa-project-wizard-step-1']/div[2]/div[3]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e95af4b-9ab9-4b2a-869f-54851a1f795a",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ui-textarea",
+      "targets": [
+        ["css=.ui-textarea", "css:finder"],
+        ["xpath=//div[@id='qa-project-wizard-step-1']/div[2]/div[3]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "описание"
+    }, {
+      "id": "3285b024-c0c7-4a5a-8d4b-fce47fe0e3df",
+      "comment": "",
+      "command": "click",
+      "target": "id=qa-project-wizard-step-1-button-next",
+      "targets": [
+        ["id=qa-project-wizard-step-1-button-next", "id"],
+        ["css=#qa-project-wizard-step-1-button-next", "css:finder"],
+        ["xpath=//button[@id='qa-project-wizard-step-1-button-next']", "xpath:attributes"],
+        ["xpath=//div[@id='qa-project-wizard-step-1']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Продолжить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e192112-792c-4f69-9a2d-27b1bf97dcf4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-36:nth-child(1) .ui-checkbox-label",
+      "targets": [
+        ["css=.mt-36:nth-child(1) .ui-checkbox-label", "css:finder"],
+        ["xpath=//div[@id='qa-project-wizard-step-2']/div/div/div[2]/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Не могу оценить стоимость заказа. Жду предложений от фрилансеров')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36d17f45-fddb-40e6-b435-68b90e1139bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-36:nth-child(2) > .ui-control > .ui-checkbox-label",
+      "targets": [
+        ["css=.mt-36:nth-child(2) > .ui-control > .ui-checkbox-label", "css:finder"],
+        ["xpath=//div[@id='qa-project-wizard-step-2']/div/div[2]/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Заказ с открытой датой завершения. Жду предложений от фрилансеров')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ab5fb2b-3690-4a84-8d04-99a09bafed8d",
+      "comment": "",
+      "command": "click",
+      "target": "id=qa-project-wizard-step-2-button-next",
+      "targets": [
+        ["id=qa-project-wizard-step-2-button-next", "id"],
+        ["css=#qa-project-wizard-step-2-button-next", "css:finder"],
+        ["xpath=//button[@id='qa-project-wizard-step-2-button-next']", "xpath:attributes"],
+        ["xpath=//div[@id='qa-project-wizard-step-2']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Продолжить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08668bed-4a86-4282-a8a4-0d86f8b106bb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=qa-project-wizard-step-2-button-next",
+      "targets": [
+        ["id=qa-project-wizard-step-2-button-next", "id"],
+        ["css=#qa-project-wizard-step-2-button-next", "css:finder"],
+        ["xpath=//button[@id='qa-project-wizard-step-2-button-next']", "xpath:attributes"],
+        ["xpath=//div[@id='qa-project-wizard-step-2']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Продолжить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d96dfe46-447f-41af-874f-4a7f6007bc76",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-16 .text-6:nth-child(4) > .read-more-trigger",
+      "targets": [
+        ["css=.mb-16 .text-6:nth-child(4) > .read-more-trigger", "css:finder"],
+        ["xpath=//div[@id='qa-project-wizard-step-3']/div/div[3]/div[2]/div/div/div[4]/label", "xpath:idRelative"],
+        ["xpath=//div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Программирование')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b13250c-c528-49ba-8c14-3f3ba8acec4f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-unstyled:nth-child(6) .ui-radio-label",
+      "targets": [
+        ["css=.list-unstyled:nth-child(6) .ui-radio-label", "css:finder"],
+        ["xpath=//div[@id='qa-project-wizard-step-3']/div/div[3]/div[2]/div/div/div[4]/div/ul/li[6]/div/label", "xpath:idRelative"],
+        ["xpath=//li[6]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'QA автоматизация')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba8b6479-2e06-428b-8c11-14c9002a7804",
+      "comment": "",
+      "command": "click",
+      "target": "id=qa-project-wizard-step-3-button-next",
+      "targets": [
+        ["id=qa-project-wizard-step-3-button-next", "id"],
+        ["css=#qa-project-wizard-step-3-button-next", "css:finder"],
+        ["xpath=//button[@id='qa-project-wizard-step-3-button-next']", "xpath:attributes"],
+        ["xpath=//div[@id='qa-project-wizard-step-3']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Опубликовать заказ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
     "id": "a9d0e738-d408-4f39-9072-33616be3193f",
     "name": "logout",
     "commands": [{
